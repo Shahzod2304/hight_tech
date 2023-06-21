@@ -27,7 +27,7 @@
    <!-- body -->
    <body class="main-layout">
       <!-- loader  -->
-      aaaa
+     
       <!-- end loader -->
       <!-- header -->
       <header>
@@ -38,7 +38,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="{% url 'home' %}"><img src="/static/images/logo.png" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -57,13 +57,13 @@
                                  <a class="nav-link" href="{% url 'about' %}">About</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="we_do.html">What we do</a>
+                                 <a class="nav-link" href="{% url 'we_do' %}">What we do</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="portfolio.html">Portfolio </a>
+                                 <a class="nav-link" href="{% url 'portfolio' %}">Portfolio </a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
                               </li>
                            </ul>
                         </div>
@@ -100,7 +100,7 @@
                                     <h1>Creative  <br>Work Idea </h1>
                                     <p>There are many variations of passages of Lorem Ipsum <br>available, but the majority have suffered alteration
                                     </p>
-                                    <a class="read_more" href="about.html">About Company </a><a class="read_more" href="contact.html">Contact </a>
+                                    <a class="read_more" href="{% url 'about' %}">About Company </a><a class="read_more" href="{% url 'contact' %}">Contact </a>
                                  </div>
                               </div>
                            </div>
@@ -112,7 +112,19 @@
                                     <h1>Creative  <br>Work Idea </h1>
                                     <p>There are many variations of passages of Lorem Ipsum <br>available, but the majority have suffered alteration
                                     </p>
-                                    <a class="read_more" href="about.html">About Company </a><a class="read_more" href="contact.html">Contact </a>
+                                    <a class="read_more" href="{% url 'about' %}">About Company </a><a class="read_more" href="{% url 'contact' %}">Contact </a>
+                                 </div>  
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container-fluid">
+                              <div class="carousel-caption relative">
+                                 <div class="bluid">
+                                    <h1>Creative  <br>Work Idea </h1>
+                                    <p>There are many variations of passages of Lorem Ipsum <br>available, but the majority have suffered alteration
+                                    </p>
+                                    <a class="read_more" href="{% url 'about' %}">About Company </a><a class="read_more" href="{% url 'contact' %}">Contact </a>
                                  </div>
                               </div>
                            </div>
@@ -124,19 +136,7 @@
                                     <h1>Creative  <br>Work Idea </h1>
                                     <p>There are many variations of passages of Lorem Ipsum <br>available, but the majority have suffered alteration
                                     </p>
-                                    <a class="read_more" href="{% url 'about' %}">About Company </a><a class="read_more" href="contact.html">Contact </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container-fluid">
-                              <div class="carousel-caption relative">
-                                 <div class="bluid">
-                                    <h1>Creative  <br>Work Idea </h1>
-                                    <p>There are many variations of passages of Lorem Ipsum <br>available, but the majority have suffered alteration
-                                    </p>
-                                    <a class="read_more" href="about.html">About Company </a><a class="read_more" href="contact.html">Contact </a>
+                                    <a class="read_more" href="{% url 'contact' %}">About Company </a><a class="read_more" href="{% url 'contact' %}">Contact </a>
                                  </div>
                               </div>
                            </div>
@@ -182,29 +182,29 @@
                                  <div class="row">
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we1.png" alt="#"/></i>
+                                          <i><img src="/static/images/we1.png" alt="#"/></i>
                                           <h3>website <br>development</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we1.png" alt="#"/></i>
+                                          <i><img src="/static/images/we1.png" alt="#"/></i>
                                           <h3>website <br>development</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we1.png" alt="#"/></i>
+                                          <i><img src="/static/images/we1.png" alt="#"/></i>
                                           <h3>website <br>development</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                  </div>
@@ -217,29 +217,29 @@
                                  <div class="row">
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we1.png" alt="#"/></i>
+                                          <i><img src="/static/images/we1.png" alt="#"/></i>
                                           <h3>website <br>development</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we2.png" alt="#"/></i>
+                                          <i><img src="/static/images/we2.png" alt="#"/></i>
                                           <h3>App <br>development</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we3.png" alt="#"/></i>
+                                          <i><img src="/static/images/we3.png" alt="#"/></i>
                                           <h3>website <br>design</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                  </div>
@@ -252,29 +252,29 @@
                                  <div class="row">
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we1.png" alt="#"/></i>
+                                          <i><img src="/static/images/we1.png" alt="#"/></i>
                                           <h3>website <br>development</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we1.png" alt="#"/></i>
+                                          <i><img src="/static/images/we1.png" alt="#"/></i>
                                           <h3>website <br>development</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                     <div class="col-md-4">
                                        <div id="bo_ho" class="we_box text_align_left">
-                                          <i><img src="images/we1.png" alt="#"/></i>
+                                          <i><img src="/static/images/we1.png" alt="#"/></i>
                                           <h3>website <br>development</h3>
                                           <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                                           </p>
-                                          <a class="read_more" href="we_do">Read More</a>
+                                          <a class="read_more" href="{% url 'we_do' %}">Read More</a>
                                        </div>
                                     </div>
                                  </div>
@@ -295,7 +295,7 @@
             </div>
          </div>
       </div>
-      <!-- end we_do -->
+      <!-- end {% url 'we_do' %} -->
       <!-- about -->
       <div class="about">
          <div class="container">
@@ -324,7 +324,7 @@
                <div class="col-md-6">
                   <div id="ho_nf" class="portfolio_main text_align_left">
                      <figure>
-                        <img src="images/prot1.png" alt="#"/>
+                        <img src="/static/images/prot1.png" alt="#"/>
                         <div class="portfolio_text">
                            <div class="li_icon">
                               <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -339,7 +339,7 @@
                <div class="col-md-6">
                   <div id="ho_nf" class="portfolio_main text_align_left">
                      <figure>
-                        <img src="images/prot2.png" alt="#"/>
+                        <img src="/static/images/prot2.png" alt="#"/>
                         <div class="portfolio_text">
                            <div class="li_icon">
                               <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -354,7 +354,7 @@
                <div class="col-md-6">
                   <div id="ho_nf" class="portfolio_main text_align_left">
                      <figure>
-                        <img src="images/prot3.png" alt="#"/>
+                        <img src="/static/images/prot3.png" alt="#"/>
                         <div class="portfolio_text">
                            <div class="li_icon">
                               <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -369,7 +369,7 @@
                <div class="col-md-6">
                   <div id="ho_nf" class="portfolio_main text_align_left">
                      <figure>
-                        <img src="images/prot4.png" alt="#"/>
+                        <img src="/static/images/prot4.png" alt="#"/>
                         <div class="portfolio_text">
                            <div class="li_icon">
                               <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -382,7 +382,7 @@
                   </div>
                </div>
                <div class="col-md-12">
-                  <a class="read_more" href="portfolio.html">See More</a>
+                  <a class="read_more" href="{% url 'portfolio' %}">See More</a>
                </div>
             </div>
          </div>
@@ -399,7 +399,7 @@
                </div>
                <div class="col-lg-5 col-md-4">
                   <div class="chose_box">
-                     <i><img src="images/chose1.png" alt="#"/></i>
+                     <i><img src="/static/images/chose1.png" alt="#"/></i>
                      <h3>Project Done </h3>
                      <strong>1000+</strong>
                      <a class="read_more" href="Javascript:void(0)">Read More</a>
@@ -407,7 +407,7 @@
                </div>
                <div class="col-lg-5 col-md-4">
                   <div class="chose_box">
-                     <i><img src="images/chose2.png" alt="#"/></i>
+                     <i><img src="/static/images/chose2.png" alt="#"/></i>
                      <h3>Happy Clients </h3>
                      <strong>900+</strong>
                      <a class="read_more" href="Javascript:void(0)">Read More</a>
@@ -415,7 +415,7 @@
                </div>
                <div class="col-lg-2 col-md-4">
                   <div class="chose_box">
-                     <i><img src="images/chose3.png" alt="#"/></i>
+                     <i><img src="/static/images/chose3.png" alt="#"/></i>
                      <h3>Awards</h3>
                      <strong>100+</strong>
                      <a class="read_more" href="Javascript:void(0)">Read More</a>
@@ -468,8 +468,8 @@
                            <div class="container">
                               <div class="carousel-caption posi_in">
                                  <div class="clientsl_text">
-                                    <i><img src="images/clint.jpg" alt="#"/></i>
-                                    <h3>Deno <img src="images/icon.png" alt="#"/></h3>
+                                    <i><img src="/static/images/clint.jpg" alt="#"/></i>
+                                    <h3>Deno <img src="/static/images/icon.png" alt="#"/></h3>
                                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
                                  </div>
                               </div>
@@ -479,8 +479,8 @@
                            <div class="container">
                               <div class="carousel-caption posi_in">
                                  <div class="clientsl_text">
-                                    <i><img src="images/clint.jpg" alt="#"/></i>
-                                    <h3>Deno <img src="images/icon.png" alt="#"/></h3>
+                                    <i><img src="/static/images/clint.jpg" alt="#"/></i>
+                                    <h3>Deno <img src="/static/images/icon.png" alt="#"/></h3>
                                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
                                  </div>
                               </div>
@@ -490,8 +490,8 @@
                            <div class="container">
                               <div class="carousel-caption posi_in">
                                  <div class="clientsl_text">
-                                    <i><img src="images/clint.jpg" alt="#"/></i>
-                                    <h3>Deno <img src="images/icon.png" alt="#"/></h3>
+                                    <i><img src="/static/images/clint.jpg" alt="#"/></i>
+                                    <h3>Deno <img src="/static/images/icon.png" alt="#"/></h3>
                                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
                                  </div>
                               </div>
@@ -518,7 +518,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-3">
-                     <a class="logo_footer" href="index.html"><img src="images/logo_footer.png" alt="#" /></a>
+                     <a class="logo_footer" href="{% url 'home' %}"><img src="/static/images/logo_footer.png" alt="#" /></a>
                   </div>
                   <div class="col-md-9">
                      <form class="newslatter_form">
@@ -531,11 +531,11 @@
                      <div class="Informa helpful">
                         <h3>Useful  Link</h3>
                         <ul>
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="we_do.html">What we do</a></li>
-                           <li><a href="portfolio.html">Portfolio</a></li>
-                           <li><a href="contact.html">Contact us</a></li>
+                           <li><a href="{% url 'home' %}">Home</a></li>
+                           <li><a href="{% url 'about' %}">About</a></li>
+                           <li><a href="{% url 'we_do' %}">What we do</a></li>
+                           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                           <li><a href="{% url 'contact' %}">Contact us</a></li>
                         </ul>
                      </div>
                   </div>
