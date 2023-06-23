@@ -90,25 +90,21 @@
                   <div class="titlepage text_align_left">
                      <h2>Get In Touch</h2>
                   </div>
-                  <form id="request" class="main_form">
+
+
+                  <form id="request" class="main_form" method="post">
                      <div class="row">
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Name" type="type" name=" Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email">                          
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name"></textarea>
+                           {% csrf_token %}
+                           {{ form.as_p }}
                         </div>
                         <div class="col-md-12">
                            <button class="send_btn">Send Now</button>
                         </div>
                      </div>
                   </form>
+
+
                </div>
             </div>
          </div>
