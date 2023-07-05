@@ -93,66 +93,24 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-md-6">
-                  <div id="ho_nf" class="portfolio_main text_align_left">
-                     <figure>
-                        <img src="/static/images/prot1.png" alt="#"/>
-                        <div class="portfolio_text">
-                           <div class="li_icon">
-                              <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
-                              <a href="Javascript:void(0)"><i class="fa fa-link" aria-hidden="true"></i></a>
+               {% for card in object_list %}
+                  <div class="col-md-6">
+                     <div id="ho_nf" class="portfolio_main text_align_left">
+                        <figure>
+                           <img src="{{card.photo.url}}" alt="this is photo"/>
+                           <div class="portfolio_text">
+                              <div class="li_icon">
+                                 <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                 <a href="Javascript:void(0)"><i class="fa fa-link" aria-hidden="true"></i></a>
+                              </div>
+                              <h3>{{card.title}}</h3>
+                              <p>{{card.mavzu}}</p>
                            </div>
-                           <h3>Carrency Dashbord</h3>
-                           <p>There are many variations of passages of Lorem Ipsum available, but the majoraity have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                        </div>
-                     </figure>
+                        </figure>
+                     </div>
                   </div>
-               </div>
-               <div class="col-md-6">
-                  <div id="ho_nf" class="portfolio_main text_align_left">
-                     <figure>
-                        <img src="/static/images/prot2.png" alt="#"/>
-                        <div class="portfolio_text">
-                           <div class="li_icon">
-                              <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
-                              <a href="Javascript:void(0)"><i class="fa fa-link" aria-hidden="true"></i></a>
-                           </div>
-                           <h3>Carrency Dashbord</h3>
-                           <p>There are many variations of passages of Lorem Ipsum available, but the majoraity have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                        </div>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div id="ho_nf" class="portfolio_main text_align_left">
-                     <figure>
-                        <img src="/static/images/prot3.png" alt="#"/>
-                        <div class="portfolio_text">
-                           <div class="li_icon">
-                              <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
-                              <a href="Javascript:void(0)"><i class="fa fa-link" aria-hidden="true"></i></a>
-                           </div>
-                           <h3>Carrency Dashbord</h3>
-                           <p>There are many variations of passages of Lorem Ipsum available, but the majoraity have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                        </div>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div id="ho_nf" class="portfolio_main text_align_left">
-                     <figure>
-                        <img src="/static/images/prot4.png" alt="#"/>
-                        <div class="portfolio_text">
-                           <div class="li_icon">
-                              <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
-                              <a href="Javascript:void(0)"><i class="fa fa-link" aria-hidden="true"></i></a>
-                           </div>
-                           <h3>Carrency Dashbord</h3>
-                           <p>There are many variations of passages of Lorem Ipsum available, but the majoraity have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                        </div>
-                     </figure>
-                  </div>
-               </div>
+               {% endfor %}
+               
                <div class="col-md-12">
                   <a class="read_more" href="{% url 'portfolio' %}">See More</a>
                </div>

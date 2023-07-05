@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, CreateView
-from .models import Contact
+from django.views.generic import TemplateView, CreateView, ListView
+from .models import Contact, Portfolio
 # Create your views here.
 
 
@@ -15,7 +15,8 @@ class Contacts(CreateView):
     template_name = 'contact.html'
     fields = "__all__"
 
-class Portfolio(TemplateView):
+class Portfolio(ListView):
+    model = Portfolio
     template_name = 'portfolio.html'
 
 class We_Do(TemplateView):
